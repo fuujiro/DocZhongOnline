@@ -1,0 +1,662 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Materialize Template</title>
+    <meta charset="UTF-8">
+    <!-- Custom CSS  -->
+
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/text-cursor.css">
+    <link rel="stylesheet" href="css/jquery-yys-slider.css">
+
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css">
+    <!-- Google material icons  -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- Vendor CSS -->
+    <link href="vendors/fullcalendar/fullcalendar.css" rel="stylesheet">
+    <link href="vendors/animate-css/animate.min.css" rel="stylesheet">
+    <link href="vendors/sweet-alert/sweet-alert.min.css" rel="stylesheet">
+    <link href="vendors/material-icons/material-design-iconic-font.min.css" rel="stylesheet">
+    <link href="vendors/socicon/socicon.min.css" rel="stylesheet">
+        
+    <!-- CSS -->
+    <link href="css/app.min.1.css" rel="stylesheet">
+    <link href="css/app.min.2.css" rel="stylesheet">
+
+    <style type="text/css">
+        body {   background-color: #000; }
+    </style>
+
+</head>
+
+<body>
+
+        <header id="header">
+                <ul class="header-inner">
+                    <li id="menu-trigger" data-trigger="#sidebar">
+                        <div class="line-wrap">
+                            <div class="line top"></div>
+                            <div class="line center"></div>
+                            <div class="line bottom"></div>
+                        </div>
+                    </li>
+                
+                    <li class="logo hidden-xs">
+                        <a href="index.html"><b>明戈考研</b></a>
+                    </li>
+                    
+                    <li class="pull-right">
+                    <ul class="top-menu">
+                        <li id="toggle-width">
+                            <!-- <div class="toggle-switch">
+                                <input id="tw-switch" type="checkbox" hidden="hidden">
+                                <label for="tw-switch" class="ts-helper"></label>
+                            </div> -->
+                        </li>
+                        <li id="top-search">
+                            <a class="tm-search" href="#"></a>
+                        </li>
+                        <li class="dropdown">
+                            <a data-toggle="dropdown" class="tm-message" href="#"><i class="tmn-counts">6</i></a>
+                            <div class="dropdown-menu dropdown-menu-lg pull-right">
+                                <div class="listview">
+                                    <div class="lv-header">
+                                        消息
+                                    </div>
+                                    <div class="lv-body c-overflow">
+                                        <a class="lv-item" href="#">
+                                            <div class="media">
+                                                <div class="pull-left">
+                                                    <img class="lv-img-sm" src="img/profile-pics/1.jpg" alt="">
+                                                </div>
+                                                <div class="media-body">
+                                                    <div class="lv-title">钟子明</div>
+                                                    <small class="lv-small">兄dei，你帮我签下到好不？</small>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a class="lv-item" href="#">
+                                            <div class="media">
+                                                <div class="pull-left">
+                                                    <img class="lv-img-sm" src="img/profile-pics/2.jpg" alt="">
+                                                </div>
+                                                <div class="media-body">
+                                                    <div class="lv-title">王林子</div>
+                                                    <small class="lv-small">兄dei，你帮我签下到好不？</small>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a class="lv-item" href="#">
+                                            <div class="media">
+                                                <div class="pull-left">
+                                                    <img class="lv-img-sm" src="img/profile-pics/3.jpg" alt="">
+                                                </div>
+                                                <div class="media-body">
+                                                    <div class="lv-title">李彦浩</div>
+                                                    <small class="lv-small">兄dei，你帮我签下到好不？</small>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a class="lv-item" href="#">
+                                            <div class="media">
+                                                <div class="pull-left">
+                                                    <img class="lv-img-sm" src="img/profile-pics/4.jpg" alt="">
+                                                </div>
+                                                <div class="media-body">
+                                                    <div class="lv-title">柳天祎</div>
+                                                    <small class="lv-small">🐻兄dei，你帮我签下到好不？</small>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a class="lv-item" href="#">
+                                            <div class="media">
+                                                <div class="pull-left">
+                                                    <img class="lv-img-sm" src="img/profile-pics/4.jpg" alt="">
+                                                </div>
+                                                <div class="media-body">
+                                                    <div class="lv-title">张童越</div>
+                                                    <small class="lv-small">🐻兄dei，你帮我签下到好不？</small>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <a class="lv-footer" href="#">View All</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="dropdown">
+                            <a data-toggle="dropdown" class="tm-notification" href="#"><i class="tmn-counts">9</i></a>
+                            <div class="dropdown-menu dropdown-menu-lg pull-right">
+                                <div class="listview" id="notifications">
+                                    <div class="lv-header">
+                                        通知
+                                        <ul class="actions">
+                                            <li class="dropdown">
+                                                <a href="#" data-clear="notification">
+                                                    <i class="md md-done-all"></i>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="lv-body c-overflow">
+                                        <a class="lv-item" href="#">
+                                            <div class="media">
+                                                <div class="pull-left">
+                                                    <img class="lv-img-sm" src="img/profile-pics/1.jpg" alt="">
+                                                </div>
+                                                <div class="media-body">
+                                                    <div class="lv-title">考研数学1</div>
+                                                    <small class="lv-small">第一章要结束了，提醒您完成单元测试。</small>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a class="lv-item" href="#">
+                                            <div class="media">
+                                                <div class="pull-left">
+                                                    <img class="lv-img-sm" src="img/profile-pics/2.jpg" alt="">
+                                                </div>
+                                                <div class="media-body">
+                                                        <div class="lv-title">考研英语</div>
+                                                        <small class="lv-small">第一章要结束了，提醒您完成单元测试。</small>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a class="lv-item" href="#">
+                                            <div class="media">
+                                                <div class="pull-left">
+                                                    <img class="lv-img-sm" src="img/profile-pics/3.jpg" alt="">
+                                                </div>
+                                                <div class="media-body">
+                                                        <div class="lv-title">考研政治1</div>
+                                                        <small class="lv-small">第一章要结束了，提醒您完成单元测试。</small>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a class="lv-item" href="#">
+                                            <div class="media">
+                                                <div class="pull-left">
+                                                    <img class="lv-img-sm" src="img/profile-pics/4.jpg" alt="">
+                                                </div>
+                                                <div class="media-body">
+                                                        <div class="lv-title">人工智能</div>
+                                                        <small class="lv-small">第一章要结束了，提醒您完成单元测试。</small>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a class="lv-item" href="#">
+                                            <div class="media">
+                                                <div class="pull-left">
+                                                    <img class="lv-img-sm" src="img/profile-pics/4.jpg" alt="">
+                                                </div>
+                                                <div class="media-body">
+                                                        <div class="lv-title">系统通知</div>
+                                                        <small class="lv-small">系统下午4：00维护，给您带来的困扰深感抱歉。</small>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                        
+                                    <a class="lv-footer" href="#">View Previous</a>
+                                </div>
+                        
+                            </div>
+                        </li>
+                        <li class="dropdown hidden-xs">
+                            <a data-toggle="dropdown" class="tm-task" href="#"><i class="tmn-counts">2</i></a>
+                            <div class="dropdown-menu pull-right dropdown-menu-lg">
+                                <div class="listview">
+                                    <div class="lv-header">
+                                        课程完成进度
+                                    </div>
+                                    <div class="lv-body">
+                                        <div class="lv-item">
+                                            <div class="lv-title m-b-5">考研数学1</div>
+                        
+                                            <div class="progress">
+                                                <div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" style="width: 95%">
+                                                    <span class="sr-only">95% Complete (success)</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="lv-item">
+                                            <div class="lv-title m-b-5">考研数学2</div>
+                        
+                                            <div class="progress">
+                                                <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
+                                                    <span class="sr-only">80% Complete (success)</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="lv-item">
+                                            <div class="lv-title m-b-5">计算机网络</div>
+                        
+                                            <div class="progress">
+                                                <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 20%">
+                                                    <span class="sr-only">20% Complete</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="lv-item">
+                                            <div class="lv-title m-b-5">数据结构</div>
+                        
+                                            <div class="progress">
+                                                <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%">
+                                                    <span class="sr-only">60% Complete (warning)</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="lv-item">
+                                            <div class="lv-title m-b-5">考研英语</div>
+                        
+                                            <div class="progress">
+                                                <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
+                                                    <span class="sr-only">80% Complete (danger)</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                        
+                                    <a class="lv-footer" href="#">View All</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="dropdown">
+                            <a data-toggle="dropdown" class="tm-settings" href="#"></a>
+                            <ul class="dropdown-menu dm-icon pull-right">
+                                <li>
+                                    <a data-action="fullscreen" href="#"><i class="md md-fullscreen"></i> 全屏模式 </a>
+                                </li>
+                                <li>
+                                    <a data-action="clear-localstorage" href="#"><i class="md md-delete"></i> 清理本地缓存 </a>
+                                </li>
+                                <li>
+                                    <a href="profile-me.html"><i class="md md-person"></i> 个人页面 </a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="md md-settings"></i> 设置 </a>
+                                </li>
+                            </ul>
+                        </li>
+                        </ul>
+                    </li>
+                </ul>
+                
+                <!-- Top Search Content -->
+                <div id="top-search-wrap">
+                    <input type="text">
+                    <i id="top-search-close">&times;</i>
+                </div>
+            </header>
+
+
+
+
+    <div class="content-part part-tese">
+<!--             <div class="content-title"></div>
+            <div class="shadow"></div> -->
+            <div class="gallery_container"></div>
+          </div>
+
+    <!-- Intro  -->
+
+<!--     <section class="intro">
+        <div class="container">
+            <h1 class="h1-intro"><b>This</b> is an example <b>portfolio</b> website</h1>
+            <h3 class="p-intro">Beautiful and highly customizable, based on Google's Material Design</h3>
+            <div class="shell-wrap" id="shell">
+                <p class="shell-top-bar">/Users/Atlas/Dev/Web/</p>
+                <ul class="shell-body">
+                    <p id="line1" class="hidden">sudo apt-get install purpose of life</p>
+                    <p id="line2" class="hidden">sudo apt-get update human mind</p>
+                    <p id="line3" class="hidden">sudo apt-get download peace</p>
+                    <p id="cursor-line" class="visible"><span class="typed-cursor">&#9608;</span></p>
+                </ul>
+            </div>
+        </div>
+    </section> -->
+
+    <section class="intro">
+        <div class="container">
+            <h1 class="h1-intro"><b>这是</b> 一个带你腾飞的 <b>考研教育</b> 网站 </h1>
+            <h3 class="p-intro"> 送各位考研党四个大字：你的明戈！ </h3>
+<!--             <div class="shell-wrap" id="shell">
+                <p class="shell-top-bar">/Users/Atlas/Dev/Web/</p>
+                <ul class="shell-body">
+                    <p id="line1" class="hidden">sudo apt-get install purpose of life</p>
+                    <p id="line2" class="hidden">sudo apt-get update human mind</p>
+                    <p id="line3" class="hidden">sudo apt-get download peace</p>
+                    <p id="cursor-line" class="visible"><span class="typed-cursor">&#9608;</span></p>
+                </ul>
+            </div> -->
+        </div>
+    </section>
+
+    <!-- <div id="banner-wrapper" class="banner-wrapper hide-on-med-only hide-on-med-and-down">
+
+        <div class="swiper-container">
+
+            <div class="swiper-wrapper">
+
+                <div class="swiper-slide">
+                    <div class="img-wrapper" style="background-image:url('img/banner-01.jpg')"></div>
+                    <div class="text-wrapper center-align white-text animated">
+                        <h1>RICOTEST</h1>
+                        <h3>TESTING & CERTIFICATION</h3>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="img-wrapper" style="background-image:url('img/banner-02.jpg')"></div>
+                    <div class="text-wrapper center-align white-text animated">
+                        <h1>RICOTEST</h1>
+                        <h3>TESTING & CERTIFICATION</h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="swiper-button-prev swiper-button-white animated fadeInLeft"></div>
+            <div class="swiper-button-next swiper-button-white animated fadeInRight"></div>
+
+        </div>
+    </div> -->
+
+    <!-- Info  -->
+
+<!--     <div class="card">
+ -->    
+    <div class="card-body card-padding">
+        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+              <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+              <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+              <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+            </ol>
+          
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner" role="listbox">
+                <div class="item active">
+                    <img src="media/carousel/c-1.jpg" alt="">
+                </div>
+                <div class="item">
+                    <img src="media/carousel/c-2.jpg" alt="">
+                </div>
+                <div class="item">
+                        <img src="media/carousel/c-3.jpg" alt="">
+                </div>
+            </div>
+          
+            <!-- Controls -->
+            <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                <span class="md md-chevron-left" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                <span class="md md-chevron-right" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </div>
+</div>
+
+    <!-- Projects  -->
+
+    <section class="projects" id="projects">
+        <div class="container">
+            <h2 class="header text_b white-text">课程推荐</h2>
+            <hr class="line">
+            <div class="row">
+                <div class="col s12 m4 l4">
+                    <div class="card">
+                        <div class="card-image waves-effect waves-block waves-light">
+                            <img class="activator" src="img/book/1.jpg">
+                        </div>
+                        <div class="card-content">
+                            <span class="card-title activator grey-text text-darken-4">考研数学1<i class="material-icons right">more_vert</i></span>
+                            <p>
+                                <a class="waves-effect waves-light btn orange" href="video.html">开始学习</a>
+                            </p>
+                        </div>
+                        <div class="card-reveal">
+                            <span class="card-title grey-text text-darken-4">考研数学1<i class="material-icons right">close</i></span>
+                            <p>Here is some more information about this product that is only revealed once clicked on.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s12 m4 l4">
+                    <div class="card">
+                        <div class="card-image waves-effect waves-block waves-light">
+                            <img class="activator" src="img/book/2.jpg">
+                        </div>
+                        <div class="card-content">
+                            <span class="card-title activator grey-text text-darken-4">考研数学2<i class="material-icons right">more_vert</i></span>
+                            <p>
+                                <a class="waves-effect waves-light btn orange" href="video.html">开始学习</a>
+                            </p>
+                        </div>
+                        <div class="card-reveal">
+                            <span class="card-title grey-text text-darken-4">考研数学2<i class="material-icons right">close</i></span>
+                            <p>Here is some more information about this product that is only revealed once clicked on.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s12 m4 l4"> 
+                    <div class="card">
+                        <div class="card-image waves-effect waves-block waves-light">
+                            <img class="activator" src="img/book/3.jpg">
+                        </div>
+                        <div class="card-content">
+                            <span class="card-title activator grey-text text-darken-4">考研英语1<i class="material-icons right">more_vert</i></span>
+                            <p>
+                                <a class="waves-effect waves-light btn orange" href="video.html">开始学习</a>
+                            </p>
+                        </div>
+                        <div class="card-reveal">
+                            <span class="card-title grey-text text-darken-4">考研英语1<i class="material-icons right">close</i></span>
+                            <p>Here is some more information about this product that is only revealed once clicked on.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s12 m4 l4">
+                    <div class="card">
+                        <div class="card-image waves-effect waves-block waves-light">
+                            <img class="activator" src="img/book/4.jpg">
+                        </div>
+                        <div class="card-content">
+                            <span class="card-title activator grey-text text-darken-4">考研英语2<i class="material-icons right">more_vert</i></span>
+                            <p>
+                                <a class="waves-effect waves-light btn orange" href="video.html">开始学习</a>
+                            </p>
+                        </div>
+                        <div class="card-reveal">
+                            <span class="card-title grey-text text-darken-4">考研英语2<i class="material-icons right">close</i></span>
+                            <p>Here is some more information about this product that is only revealed once clicked on.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s12 m4 l4">
+                    <div class="card">
+                        <div class="card-image waves-effect waves-block waves-light">
+                            <img class="activator" src="img/book/5.jpg">
+                        </div>
+                        <div class="card-content">
+                            <span class="card-title activator grey-text text-darken-4">人工智能1<i class="material-icons right">more_vert</i></span>
+                            <p>
+                                <a class="waves-effect waves-light btn orange" href="video.html">开始学习</a>
+                            </p>
+                        </div>
+                        <div class="card-reveal">
+                            <span class="card-title grey-text text-darken-4">人工智能1<i class="material-icons right">close</i></span>
+                            <p>Here is some more information about this product that is only revealed once clicked on.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s12 m4 l4">
+                    <div class="card">
+                        <div class="card-image waves-effect waves-block waves-light">
+                            <img class="activator" src="img/book/6.jpg">
+                        </div>
+                        <div class="card-content">
+                            <span class="card-title activator grey-text text-darken-4">人工智能2<i class="material-icons right">more_vert</i></span>
+                            <p>
+                                <a class="waves-effect waves-light btn orange" href="video.html">开始学习</a>
+                            </p>
+                        </div>
+                        <div class="card-reveal">
+                            <span class="card-title grey-text text-darken-4">人工智能2<i class="material-icons right">close</i></span>
+                            <p>Here is some more information about this product that is only revealed once clicked on.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <br>
+    </section>
+
+    <section class="skills" id="skills">
+        <div class="container">
+            <h2 class="header text_b white-text">名师推荐</h2>
+            <hr class="line">
+            <div class="row">
+
+                <div class="col s12 m3 l3">
+                    <div class="contentDiv">
+                        <a href="profile-teacher.html">
+                            <img src="img/teacher/1.jpg"/><!--资源自己添加-->
+                        </a>
+                    </div>
+                </div>
+                <div class="col s12 m3 l3">
+                    <div class="contentDiv">
+                        <a href="profile-teacher.html">
+                            <img src="img/teacher/2.jpg"/><!--资源自己添加-->
+                        </a> 
+                    </div>
+                </div>
+                <div class="col s12 m3 l3">
+                    <div class="contentDiv">
+                        <a href="profile-teacher.html">
+                            <img src="img/teacher/3.jpg"/><!--资源自己添加-->
+                        </a>                     
+                    </div>
+                </div>
+                <div class="col s12 m3 l3">
+                    <div class="contentDiv">
+                        <a href="profile-teacher.html">
+                            <img src="img/teacher/4.jpg"/><!--资源自己添加-->
+                        </a>                     
+                    </div>
+                </div>
+
+                <div class="col s12 m3 l3">
+                    <h3> 钟子明 </h3>
+                    <p> 明戈考研教育创始人，人工智能领域泰斗级学者。 </p>
+                </div>
+                <div class="col s12 m3 l3">
+                    
+                        <h3> 张雪峰 </h3>
+                        <p> 考研知名人物，帮助各位考生考研成功。 </p>
+                    
+                </div>
+                <div class="col s12 m3 l3">
+                    
+                        <h3> 李培华 </h3>
+                        <p> 大连理工信通学院教授，科研经验丰富，对待学生学习成绩十分严格。 </p>
+                    
+                </div>
+                <div class="col s12 m3 l3">
+                    
+                        <h3> 李林 </h3>
+                        <p> 考研数学的统治级人物，曾因2017考研压中数学题近百分，一战成名，特邀嘉宾助力考研。 </p>
+                    
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <div class="container">
+            <h2 class="header text_b white-text">联系我们</h2>
+            <hr class="line">
+            <div class="row">
+                <form class="col s12">
+                    <div class="row">
+                        <div class="input-field col s6">
+                            <input id="first_name" type="text" class="validate" style="color:rgb(210, 210, 210)">
+                            <label for="first_name">姓</label>
+                        </div>
+                        <div class="input-field col s6">
+                            <input id="last_name" type="text" class="validate" style="color:rgb(210, 210, 210)">
+                            <label for="last_name">名</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <input id="email" type="email" class="validate" style="color:rgb(210, 210, 210)">
+                            <label for="email">给我们发邮件</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <textarea id="email_text" class="materialize-textarea" style="color:rgb(210, 210, 210)"></textarea>
+                            <label for="email_text">内容</label>
+                        </div>
+                    </div>
+                    <a class="waves-effect waves-light btn-large orange" id="btn_email"><i class="material-icons right">mail</i>Send Email</a>
+                </form>
+            </div>
+        </div>
+    </section>
+
+        <div class="footer-copyright">
+            <div class="container">
+                © 2016 Adam Thuvesen
+            </div>
+        </div>
+
+    <!-- scripts  -->
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/typing.js"></script>
+
+    <script src="https://cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
+    <script src="js/jquery-yys-slider.js"></script>
+
+    <script src="js/jquery-2.1.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    
+    <script src="vendors/nicescroll/jquery.nicescroll.min.js"></script>
+    <script src="vendors/waves/waves.min.js"></script>
+    <script src="vendors/bootstrap-growl/bootstrap-growl.min.js"></script>
+    <script src="vendors/light-gallery/lightGallery.min.js"></script> 
+    <script src="vendors/mediaelement/mediaelement-and-player.min.js"></script>
+    <script src="vendors/sweet-alert/sweet-alert.min.js"></script>
+    
+    <script src="js/functions.js"></script>
+    <script src="js/demo.js"></script>
+
+    <script>
+    $(function(){
+        $('.content-part.part-tese').addClass('show');
+        $('.gallery_container').gallery_slider({
+        imgNum: 5,
+        imgArr: [
+          'img/banner01.jpg',
+          'img/banner02.jpg',
+          'img/banner03.jpg',
+          'img/banner04.jpg',
+          'img/banner05.jpg'
+        ]
+      });
+    })
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,787 @@
+<!DOCTYPE html>
+    <!--[if IE 9 ]><html class="ie9"><![endif]-->
+    
+<!-- Mirrored from byrushan.com/projects/ma/v1-3-1/profile-about.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 04 May 2015 13:18:25 GMT -->
+<head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Material Admin</title>
+    
+        <!-- Vendor CSS -->
+        <link href="vendors/animate-css/animate.min.css" rel="stylesheet">
+        <link href="vendors/sweet-alert/sweet-alert.min.css" rel="stylesheet">
+        <link href="vendors/material-icons/material-design-iconic-font.min.css" rel="stylesheet">
+        <link href="vendors/socicon/socicon.min.css" rel="stylesheet">
+            
+        <!-- CSS -->
+        <link href="css/app.min.1.css" rel="stylesheet">
+        <link href="css/app.min.2.css" rel="stylesheet">
+    </head>
+    
+    <body>
+        <header id="header">
+            <ul class="header-inner">
+                <li id="menu-trigger" data-trigger="#sidebar">
+                    <div class="line-wrap">
+                        <div class="line top"></div>
+                        <div class="line center"></div>
+                        <div class="line bottom"></div>
+                    </div>
+                </li>
+            
+                <li class="logo hidden-xs">
+                    <a href="index-2.html">Prof. 钟子明</a>
+                </li>
+                
+                <li class="pull-right">
+                <ul class="top-menu">
+                    <li id="toggle-width">
+                        <div class="toggle-switch">
+                            <input id="tw-switch" type="checkbox" hidden="hidden">
+                            <label for="tw-switch" class="ts-helper"></label>
+                        </div>
+                    </li>
+                    <li id="top-search">
+                        <a class="tm-search" href="#"></a>
+                    </li>
+                    <li class="dropdown">
+                            <a data-toggle="dropdown" class="tm-message" href="#"><i class="tmn-counts">6</i></a>
+                            <div class="dropdown-menu dropdown-menu-lg pull-right">
+                                <div class="listview">
+                                    <div class="lv-header">
+                                        消息
+                                    </div>
+                                    <div class="lv-body c-overflow">
+                                        <a class="lv-item" href="#">
+                                            <div class="media">
+                                                <div class="pull-left">
+                                                    <img class="lv-img-sm" src="img/profile-pics/1.jpg" alt="">
+                                                </div>
+                                                <div class="media-body">
+                                                    <div class="lv-title">冯子扬</div>
+                                                    <small class="lv-small">老师，你帮我签下到好不？</small>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a class="lv-item" href="#">
+                                            <div class="media">
+                                                <div class="pull-left">
+                                                    <img class="lv-img-sm" src="img/profile-pics/2.jpg" alt="">
+                                                </div>
+                                                <div class="media-body">
+                                                    <div class="lv-title">王林子</div>
+                                                    <small class="lv-small">老师，你帮我签下到好不？</small>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a class="lv-item" href="#">
+                                            <div class="media">
+                                                <div class="pull-left">
+                                                    <img class="lv-img-sm" src="img/profile-pics/3.jpg" alt="">
+                                                </div>
+                                                <div class="media-body">
+                                                    <div class="lv-title">李彦浩</div>
+                                                    <small class="lv-small">老师，你帮我签下到好不？</small>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a class="lv-item" href="#">
+                                            <div class="media">
+                                                <div class="pull-left">
+                                                    <img class="lv-img-sm" src="img/profile-pics/4.jpg" alt="">
+                                                </div>
+                                                <div class="media-body">
+                                                    <div class="lv-title">柳天祎</div>
+                                                    <small class="lv-small">👨‍🏫老师，你帮我签下到好不？</small>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a class="lv-item" href="#">
+                                            <div class="media">
+                                                <div class="pull-left">
+                                                    <img class="lv-img-sm" src="img/profile-pics/4.jpg" alt="">
+                                                </div>
+                                                <div class="media-body">
+                                                    <div class="lv-title">张童越</div>
+                                                    <small class="lv-small">老师，你帮我签下到好不？</small>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <a class="lv-footer" href="#">View All</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="dropdown">
+                            <a data-toggle="dropdown" class="tm-notification" href="#"><i class="tmn-counts">9</i></a>
+                            <div class="dropdown-menu dropdown-menu-lg pull-right">
+                                <div class="listview" id="notifications">
+                                    <div class="lv-header">
+                                        通知
+                                        <ul class="actions">
+                                            <li class="dropdown">
+                                                <a href="#" data-clear="notification">
+                                                    <i class="md md-done-all"></i>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="lv-body c-overflow">
+                                        <a class="lv-item" href="#">
+                                            <div class="media">
+                                                <div class="pull-left">
+                                                    <img class="lv-img-sm" src="img/profile-pics/1.jpg" alt="">
+                                                </div>
+                                                <div class="media-body">
+                                                    <div class="lv-title">考研数学1</div>
+                                                    <small class="lv-small">第一章要结束了，提醒您完成单元测试。</small>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a class="lv-item" href="#">
+                                            <div class="media">
+                                                <div class="pull-left">
+                                                    <img class="lv-img-sm" src="img/profile-pics/2.jpg" alt="">
+                                                </div>
+                                                <div class="media-body">
+                                                        <div class="lv-title">考研英语</div>
+                                                        <small class="lv-small">第一章要结束了，提醒您完成单元测试。</small>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a class="lv-item" href="#">
+                                            <div class="media">
+                                                <div class="pull-left">
+                                                    <img class="lv-img-sm" src="img/profile-pics/3.jpg" alt="">
+                                                </div>
+                                                <div class="media-body">
+                                                        <div class="lv-title">考研政治1</div>
+                                                        <small class="lv-small">第一章要结束了，提醒您完成单元测试。</small>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a class="lv-item" href="#">
+                                            <div class="media">
+                                                <div class="pull-left">
+                                                    <img class="lv-img-sm" src="img/profile-pics/4.jpg" alt="">
+                                                </div>
+                                                <div class="media-body">
+                                                        <div class="lv-title">人工智能</div>
+                                                        <small class="lv-small">第一章要结束了，提醒您完成单元测试。</small>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a class="lv-item" href="#">
+                                            <div class="media">
+                                                <div class="pull-left">
+                                                    <img class="lv-img-sm" src="img/profile-pics/4.jpg" alt="">
+                                                </div>
+                                                <div class="media-body">
+                                                        <div class="lv-title">系统通知</div>
+                                                        <small class="lv-small">系统下午4：00维护，给您带来的困扰深感抱歉。</small>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                        
+                                    <a class="lv-footer" href="#">View Previous</a>
+                                </div>
+                        
+                            </div>
+                        </li>
+                        <li class="dropdown hidden-xs">
+                            <a data-toggle="dropdown" class="tm-task" href="#"><i class="tmn-counts">2</i></a>
+                            <div class="dropdown-menu pull-right dropdown-menu-lg">
+                                <div class="listview">
+                                    <div class="lv-header">
+                                        教学进度
+                                    </div>
+                                    <div class="lv-body">
+                                        <div class="lv-item">
+                                            <div class="lv-title m-b-5">考研数学1</div>
+                        
+                                            <div class="progress">
+                                                <div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" style="width: 95%">
+                                                    <span class="sr-only">95% Complete (success)</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="lv-item">
+                                            <div class="lv-title m-b-5">考研数学2</div>
+                        
+                                            <div class="progress">
+                                                <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
+                                                    <span class="sr-only">80% Complete (success)</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="lv-item">
+                                            <div class="lv-title m-b-5">计算机网络</div>
+                        
+                                            <div class="progress">
+                                                <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 20%">
+                                                    <span class="sr-only">20% Complete</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="lv-item">
+                                            <div class="lv-title m-b-5">数据结构</div>
+                        
+                                            <div class="progress">
+                                                <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%">
+                                                    <span class="sr-only">60% Complete (warning)</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="lv-item">
+                                            <div class="lv-title m-b-5">考研英语</div>
+                        
+                                            <div class="progress">
+                                                <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
+                                                    <span class="sr-only">80% Complete (danger)</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                        
+                                    <a class="lv-footer" href="#">View All</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="dropdown">
+                            <a data-toggle="dropdown" class="tm-settings" href="#"></a>
+                            <ul class="dropdown-menu dm-icon pull-right">
+                                <li>
+                                    <a data-action="fullscreen" href="#"><i class="md md-fullscreen"></i> 全屏模式 </a>
+                                </li>
+                                <li>
+                                    <a data-action="clear-localstorage" href="#"><i class="md md-delete"></i> 清理本地缓存 </a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="md md-person"></i> 个人页面 </a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="md md-settings"></i> 设置 </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            
+            <!-- Top Search Content -->
+            <div id="top-search-wrap">
+                <input type="text">
+                <i id="top-search-close">&times;</i>
+            </div>
+        </header>
+        
+        <section id="main">
+            <aside id="sidebar">
+                <div class="sidebar-inner">
+                    <div class="si-inner">
+                        <div class="profile-menu">
+                            <a href="#">
+                                <div class="profile-pic">
+                                    <img src="img/photo/fzy-q.JPG" alt="">
+                                </div>
+                
+                                <div class="profile-info">
+                                    钟子明
+                
+                                    <i class="md md-arrow-drop-down"></i>
+                                </div>
+                            </a>
+                
+                            <ul class="main-menu">
+                                <li>
+                                    <a href="profile-about.html"><i class="md md-person"></i> 查看个人主页</a>
+                                </li>
+                                <!-- <li>
+                                    <a href="#"><i class="md md-settings-input-antenna"></i> 个人设置 </a>
+                                </li> -->
+                                <li>
+                                    <a href="#"><i class="md md-settings"></i> 设置</a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="md md-history"></i> 退出 </a>
+                                </li>
+                            </ul>
+                        </div>
+                
+                        <ul class="main-menu">
+                            <li><a href="index2.html"><i class="md md-home"></i> 本站首页 </a></li>
+                            <li><a href="typography.html"><i class="md md-person"></i> 与好友聊回儿 </a></li>
+                            <li class="sub-menu">
+                                <a href="#"><i class="md md-now-widgets"></i> 待开发功能</a>
+
+                                <ul>
+                                    <li><a href="widget-templates.html">待开发</a></li>
+                                    <li><a class="active" href="widgets.html">待开发</a></li>
+                                </ul>
+                            </li>
+                            <li class="sub-menu">
+                                <a href="#"><i class="md md-view-list"></i> 待开发功能</a>
+                
+                                <ul>
+                                    <li><a href="tables.html">待开发</a></li>
+                                    <li><a href="data-tables.html">待开发</a></li>
+                                </ul>
+                            </li>
+                            <li class="sub-menu">
+                                <a href="#"><i class="md md-my-library-books"></i> 待开发功能</a>
+                
+                                <ul>
+                                    <li><a href="form-elements.html">待开发</a></li>
+                                    <li><a href="form-components.html">待开发</a></li>
+                                    <li><a href="form-examples.html">待开发</a></li>
+                                    <li><a href="form-validations.html">待开发</a></li>
+                                </ul>
+                            </li>
+                            <li class="sub-menu">
+                                <a href="#"><i class="md md-swap-calls"></i>待开发功能</a>
+                                <ul>
+                                    <li><a href="colors.html">待开发</a></li>
+                                    <li><a href="animations.html">待开发</a></li>
+                                    <li><a href="box-shadow.html">待开发</a></li>
+                                    <li><a href="buttons.html">待开发</a></li>
+                                    <li><a href="icons.html">待开发</a></li>
+                                    <li><a href="alerts.html">待开发</a></li>
+                                    <li><a href="notification-dialog.html">待开发</a></li>
+                                    <li><a href="media.html">待开发</a></li>
+                                    <li><a href="components.html">待开发</a></li>
+                                    <li><a href="other-components.html">待开发</a></li>
+                                </ul>
+                            </li>
+                            <li class="sub-menu">
+                                <a href="#"><i class="md md-trending-up"></i>待开发功能</a>
+                                <ul>
+                                    <li><a href="flot-charts.html">待开发</a></li>
+                                    <li><a href="other-charts.html">待开发</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="calendar.html"><i class="md md-today"></i> 待开发功能</a></li>
+                            <li><a href="generic-classes.html"><i class="md md-layers"></i> 待开发功能</a></li>
+                            <li class="sub-menu active">
+                                <a href="#"><i class="md md-content-copy"></i> 模版页 </a>
+                                <ul>
+                                    <li><a class="active" href="profile-about.html">个人主页</a></li>
+                                    <li><a href="list-view.html">上次查看的地方</a></li>
+                                    <li><a href="messages.html">消息</a></li>
+                                    <li><a href="login.html">登录页</a></li>
+                                    <li><a href="404.html">404页面</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </aside>
+        
+            <section id="content">
+                <div class="container">
+                    
+                    <div class="block-header">
+                        <h2> 钟子明 教授 <small> Professor at Department of Computer Science & Technology, Stanford University </small></h2>
+                        
+                        <ul class="actions m-t-20 hidden-xs">
+                            <li class="dropdown">
+                                <a href="#" data-toggle="dropdown">
+                                    <i class="md md-more-vert"></i>
+                                </a>
+                    
+                                <ul class="dropdown-menu dropdown-menu-right">
+                                    <li>
+                                        <a href="#">个人主页</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">账户设置</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">设置</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div class="card" id="profile-main">
+                        <div class="pm-overview c-overflow">
+                            <div class="pmo-pic">
+                                <div class="p-relative">
+                                    <a href="#">
+                                        <img class="img-responsive" src="img/photo/zzm.jpg" alt=""> 
+                                    </a>
+                                    
+                                    <div class="dropdown pmop-message">
+                                        <a data-toggle="dropdown" href="#" class="btn bgm-white btn-float z-depth-1">
+                                            <i class="md md-message"></i>
+                                        </a>
+                                        
+                                        <div class="dropdown-menu">
+                                            <textarea placeholder="Write something..."></textarea>
+                                            
+                                            <button class="btn bgm-green btn-icon"><i class="md md-send"></i></button>
+                                        </div>
+                                    </div>
+                                    
+                                    <a href="#" class="pmop-edit">
+                                        <i class="md md-camera-alt"></i> <span class="hidden-xs">上传照片</span>
+                                    </a>
+                                </div>
+                                
+                                
+                                <div class="pmo-stat">
+                                    <h2 class="m-0 c-white">教工号</h2>
+                                        201688035
+                                </div>
+                            </div>
+                            
+                            <div class="pmo-block pmo-contact hidden-xs">
+                                <h2>联系</h2>
+                                
+                                <ul>
+                                    <li><i class="md md-phone"></i> 15524892259</li>
+                                    <li><i class="md md-email"></i> ziming.zhong@stanford.edu </li>
+                                    <li><i class="socicon socicon-twitter"></i> @zzm (twitter.com/zzm-stanford)</li>
+                                    <li>
+                                        <i class="md md-location-on"></i>
+                                        <address class="m-b-0">
+                                                Stanford Uni. </br>
+                                                Palo Alto, California</br>
+                                                United of State America.
+                                        </address>
+                                    </li>
+                                </ul>
+                            </div>
+                            
+                            <div class="pmo-block pmo-items hidden-xs">
+                                <h2>Connections</h2>
+                                
+                                <div class="pmob-body">
+                                    <div class="row">
+                                        <a href="#" class="col-xs-2">
+                                            <img class="img-circle" src="img/profile-pics/1.jpg" alt="">
+                                        </a>
+                                        <a href="#" class="col-xs-2">
+                                            <img class="img-circle" src="img/profile-pics/2.jpg" alt="">
+                                        </a>
+                                        <a href="#" class="col-xs-2">
+                                            <img class="img-circle" src="img/profile-pics/3.jpg" alt="">
+                                        </a>
+                                        <a href="#" class="col-xs-2">
+                                            <img class="img-circle" src="img/profile-pics/4.jpg" alt="">
+                                        </a>
+                                        <a href="#" class="col-xs-2">
+                                            <img class="img-circle" src="img/profile-pics/5.jpg" alt="">
+                                        </a>
+                                        <a href="#" class="col-xs-2">
+                                            <img class="img-circle" src="img/profile-pics/6.jpg" alt="">
+                                        </a>
+                                        <a href="#" class="col-xs-2">
+                                            <img class="img-circle" src="img/profile-pics/7.jpg" alt="">
+                                        </a>
+                                        <a href="#" class="col-xs-2">
+                                            <img class="img-circle" src="img/profile-pics/8.jpg" alt="">
+                                        </a>
+                                        <a href="#" class="col-xs-2">
+                                            <img class="img-circle" src="img/profile-pics/1.jpg" alt="">
+                                        </a>
+                                        <a href="#" class="col-xs-2">
+                                            <img class="img-circle" src="img/profile-pics/2.jpg" alt="">
+                                        </a>
+                                        <a href="#" class="col-xs-2">
+                                            <img class="img-circle" src="img/profile-pics/3.jpg" alt="">
+                                        </a>
+                                        <a href="#" class="col-xs-2">
+                                            <img class="img-circle" src="img/profile-pics/4.jpg" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="pm-body clearfix">
+                            <ul class="tab-nav tn-justified">
+                                <li class="active waves-effect"><a href="profile-teacher.html">关于老师</a></li>
+                                <li class="waves-effect"><a href="#">课程列表</a></li>
+                                <!-- <li class="waves-effect"><a href="#">课程列表</a></li>
+                                <li class="waves-effect"><a href="#">关注的老师</a></li> -->
+                            </ul>
+                            
+                            
+                            <div class="pmb-block">
+                                <div class="pmbb-header">
+                                    <h2><i class="md md-equalizer m-r-5"></i> 老师简介 </h2>
+                                    
+                                    <ul class="actions">
+                                        <li class="dropdown">
+                                            <a href="#" data-toggle="dropdown">
+                                                <i class="md md-more-vert"></i>
+                                            </a>
+                                            
+                                            <!-- <ul class="dropdown-menu dropdown-menu-right">
+                                                <li>
+                                                    <a data-pmb-action="edit" href="#">编辑</a>
+                                                </li>
+                                            </ul> -->
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="pmbb-body p-l-30">
+                                    <div class="pmbb-view">
+                                        斯坦福大学计算机系终身教授；</br>
+                                        华人人工智能的骄傲；</br>
+                                        明戈考研教育创始人。
+                                    </div>
+                                    
+                                    <!-- <div class="pmbb-edit">
+                                        <div class="fg-line">
+                                            <textarea class="form-control" rows="5" placeholder="Summary...">很肥宅，啥也不会，躺在家里超级舒服的。</br>
+                                                是个狠人。</br>
+                                                啥也别说了，想找个女朋友。</textarea>
+                                        </div>
+                                        <div class="m-t-10">
+                                            <button class="btn btn-primary btn-sm">保存</button>
+                                            <button data-pmb-action="reset" class="btn btn-link btn-sm">取消</button>
+                                        </div>
+                                    </div> -->
+                                </div>
+                            </div>
+                            
+                            <div class="pmb-block">
+                                <div class="pmbb-header">
+                                    <h2><i class="md md-today m-r-5"></i> 学术成果 </h2>
+                                    
+                                    <ul class="actions">
+                                        <li class="dropdown">
+                                            <a href="#" data-toggle="dropdown">
+                                                <i class="md md-more-vert"></i>
+                                            </a>
+                                            
+                                            <!-- <ul class="dropdown-menu dropdown-menu-right">
+                                                <li>
+                                                    <a data-pmb-action="edit" href="#">Edit</a>
+                                                </li>
+                                            </ul> -->
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="pmbb-body p-l-30">
+                                    <div class="pmbb-view">
+                                        <dl class="dl-horizontal">
+                                            <dt>IEEE</dt>
+                                            <dd>人工智能顶会1作</dd>
+                                        </dl>
+                                        <dl class="dl-horizontal">
+                                            <dt>CVPR</dt>
+                                            <dd>计算机视觉顶会1作</dd>
+                                        </dl>
+                                        <dl class="dl-horizontal">
+                                            <dt>ICCV</dt>
+                                            <dd>计算机视觉顶会1作</dd>
+                                        </dl>
+                                        <dl class="dl-horizontal">
+                                            <dt>AAAI</dt>
+                                            <dd>人工智能顶会1作</dd>
+                                        </dl>
+                                    </div>
+                                    
+                                    <div class="pmbb-edit">
+                                        <dl class="dl-horizontal">
+                                            <dt class="p-t-10">Full Name</dt>
+                                            <dd>
+                                                <div class="fg-line">
+                                                    <input type="text" class="form-control" placeholder="eg. Mallinda Hollaway">
+                                                </div>
+                                                
+                                            </dd>
+                                        </dl>
+                                        <dl class="dl-horizontal">
+                                            <dt class="p-t-10">Gender</dt>
+                                            <dd>
+                                                <div class="fg-line">
+                                                    <select class="form-control">
+                                                        <option>Male</option>
+                                                        <option>Female</option>
+                                                        <option>Other</option>
+                                                    </select>
+                                                </div>
+                                            </dd>
+                                        </dl>
+                                        <dl class="dl-horizontal">
+                                            <dt class="p-t-10">Birthday</dt>
+                                            <dd>
+                                                <div class="dtp-container dropdown fg-line">
+                                                    <input type='text' class="form-control date-picker" data-toggle="dropdown" placeholder="Click here...">
+                                                </div>
+                                            </dd>
+                                        </dl>
+                                        <dl class="dl-horizontal">
+                                            <dt class="p-t-10">Martial Status</dt>
+                                            <dd>
+                                                <div class="fg-line">
+                                                    <select class="form-control">
+                                                        <option>Single</option>
+                                                        <option>Married</option>
+                                                        <option>Other</option>
+                                                    </select>
+                                                </div>
+                                            </dd>
+                                        </dl>
+                                        
+                                        <div class="m-t-30">
+                                            <button class="btn btn-primary btn-sm">Save</button>
+                                            <button data-pmb-action="reset" class="btn btn-link btn-sm">Cancel</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                       
+                        
+                            <div class="pmb-block">
+                                <div class="pmbb-header">
+                                    <h2><i class="md md-check-box m-r-5"></i> 荣誉奖项 </h2>
+                                    
+                                    <!-- <ul class="actions">
+                                        <li class="dropdown">
+                                            <a href="#" data-toggle="dropdown">
+                                                <i class="md md-more-vert"></i>
+                                            </a>
+                                            
+                                            <ul class="dropdown-menu dropdown-menu-right">
+                                                <li>
+                                                    <a data-pmb-action="edit" href="#">Edit</a>
+                                                </li> 
+                                            </ul>
+                                        </li>
+                                    </ul> -->
+                                </div>
+                                <div class="pmbb-body p-l-30">
+                                    <div class="pmbb-view">
+                                        <dl class="dl-horizontal">
+                                            <dt>2018th “明哥杯”教学大赛</dt>
+                                            <dd>一等奖</dd>
+                                        </dl>
+                                        <dl class="dl-horizontal">
+                                            <dt>2017th “明哥杯”教学大赛</dt>
+                                            <dd>一等奖</dd>
+                                        </dl>
+                                        <dl class="dl-horizontal">
+                                            <dt>2016th “明哥杯”教学大赛</dt>
+                                            <dd>一等奖</dd>
+                                        </dl>
+                                        <dl class="dl-horizontal">
+                                            <dt>2015th “明哥杯”教学大赛</dt>
+                                            <dd>一等奖</dd>
+                                        </dl>
+                                    </div>
+                                    
+                                    <div class="pmbb-edit">
+                                        <dl class="dl-horizontal">
+                                            <dt class="p-t-10">Mobile Phone</dt>
+                                            <dd>
+                                                <div class="fg-line">
+                                                    <input type="text" class="form-control" placeholder="eg. 00971 12345678 9">
+                                                </div>
+                                            </dd>
+                                        </dl>
+                                        <dl class="dl-horizontal">
+                                            <dt class="p-t-10">Email Address</dt>
+                                            <dd>
+                                                <div class="fg-line">
+                                                    <input type="email" class="form-control" placeholder="eg. malinda.h@gmail.com">
+                                                </div>
+                                            </dd>
+                                        </dl>
+                                        <dl class="dl-horizontal">
+                                            <dt class="p-t-10">Twitter</dt>
+                                            <dd>
+                                                <div class="fg-line">
+                                                    <input type="text" class="form-control" placeholder="eg. @malinda">
+                                                </div>
+                                            </dd>
+                                        </dl>
+                                        <dl class="dl-horizontal">
+                                            <dt class="p-t-10">Skype</dt>
+                                            <dd>
+                                                <div class="fg-line">
+                                                    <input type="text" class="form-control" placeholder="eg. malinda.hollaway">
+                                                </div>
+                                            </dd>
+                                        </dl>
+                                        
+                                        <div class="m-t-30">
+                                            <button class="btn btn-primary btn-sm">Save</button>
+                                            <button data-pmb-action="reset" class="btn btn-link btn-sm">Cancel</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </section>
+
+        <!-- Older IE warning message -->
+        <!--[if lt IE 9]>
+            <div class="ie-warning">
+                <h1 class="c-white">IE SUCKS!</h1>
+                <p>You are using an outdated version of Internet Explorer, upgrade to any of the following web browser <br/>in order to access the maximum functionality of this website. </p>
+                <ul class="iew-download">
+                    <li>
+                        <a href="http://www.google.com/chrome/">
+                            <img src="img/browsers/chrome.png" alt="">
+                            <div>Chrome</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.mozilla.org/en-US/firefox/new/">
+                            <img src="img/browsers/firefox.png" alt="">
+                            <div>Firefox</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://www.opera.com">
+                            <img src="img/browsers/opera.png" alt="">
+                            <div>Opera</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.apple.com/safari/">
+                            <img src="img/browsers/safari.png" alt="">
+                            <div>Safari</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://windows.microsoft.com/en-us/internet-explorer/download-ie">
+                            <img src="img/browsers/ie.png" alt="">
+                            <div>IE (New)</div>
+                        </a>
+                    </li>
+                </ul>
+                <p>Upgrade your browser for a Safer and Faster web experience. <br/>Thank you for your patience...</p>
+            </div>   
+        <![endif]-->
+    
+    
+        <!-- Javascript Libraries -->
+        <script src="js/jquery-2.1.1.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        
+        <script src="vendors/moment/moment.min.js"></script>
+        <script src="vendors/nicescroll/jquery.nicescroll.min.js"></script>
+        <script src="vendors/waves/waves.min.js"></script>
+        <script src="vendors/bootstrap-growl/bootstrap-growl.min.js"></script>
+        <script src="vendors/sweet-alert/sweet-alert.min.js"></script>
+        <script src="vendors/bootstrap-datetimepicker/bootstrap-datetimepicker.min.js"></script>
+        
+        <script src="js/functions.js"></script>
+        <script src="js/demo.js"></script>
+    
+    
+    </body>
+
+<!-- Mirrored from byrushan.com/projects/ma/v1-3-1/profile-about.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 04 May 2015 13:18:28 GMT -->
+</html>
